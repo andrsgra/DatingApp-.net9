@@ -11,8 +11,13 @@ builder.Services.AddDbContext<DataContext>(opt =>
 });
 
 var app = builder.Build();
+app.UseCors(x => x
+    .AllowAnyHeader()
+    .AllowAnyMethod()
+    .WithOrigins("http://localhost:4200"));
 
-// Configure the HTTP request pipeline.
+
+// Configure the HTTP request pipeline
 app.MapControllers();
 
 app.Run();
