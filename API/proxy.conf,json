@@ -1,0 +1,6 @@
+{
+  "/api": {
+    "target": "http://localhost:4200",  // Replace with the correct backend API URL
+    "secure": false
+  }
+}
