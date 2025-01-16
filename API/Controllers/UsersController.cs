@@ -9,7 +9,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
-[Authorize] public class UsersController(IUserRepository userRepository, IMapper mapper,
+[Authorize] 
+public class UsersController(IUserRepository userRepository, IMapper mapper,
  IPhotoservice photoservice) : BaseApiController
 {
     [HttpGet]
@@ -22,7 +23,7 @@ namespace API.Controllers;
 
         return Ok(users);
     }
-
+    
     [HttpGet("{username}")]  // /api/users/2
     public async Task<ActionResult<MemberDto>> GetUser(string username)
     {

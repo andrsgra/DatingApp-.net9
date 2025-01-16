@@ -87,7 +87,7 @@ namespace API.Data.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<DateTime?>("DateRad")
+                    b.Property<DateTime?>("DateRead")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime>("MessageSent")
