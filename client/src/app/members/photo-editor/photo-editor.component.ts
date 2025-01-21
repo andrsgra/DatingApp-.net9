@@ -1,4 +1,4 @@
-import { Component, inject, input, OnInit, output } from '@angular/core';
+import { Component, inject, input, OnInit, output  } from '@angular/core';
 import { Member } from '../../_models/member';
 import { DecimalPipe, NgClass, NgFor, NgIf, NgStyle } from '@angular/common';
 import { FileUploader, FileUploadModule } from 'ng2-file-upload';

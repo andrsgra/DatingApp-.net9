@@ -29,6 +29,7 @@ public static class ApplicationServiceExtentions
         services.Configure<CloudinarySettings>(config.GetSection("CloudinarySettings"));
         services.AddSignalR();
         services.AddSingleton<PresenceTracker>();
+        services.AddScoped<IPhotoRepository, PhotoRepository>();
 
         return services;
     }
