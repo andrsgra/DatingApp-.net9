@@ -26,7 +26,7 @@ jobs:
 
       - name: Install deps and build angular app
         run: |
-          cd clients
+          cd client
           npm install
           ng build
 
